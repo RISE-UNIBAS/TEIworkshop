@@ -233,11 +233,10 @@ The most explicit form of textual annotation is the addition of notes to the tex
 
 ```xml
 <p xmlns="http://www.tei-c.org/ns/1.0">'Plenty of options', he thought, sat on a bench and
-opened the book he had taken from the Whoopledywhaaian National Library<note n="1" 
-place="foot" type="authorial">The National Library of Whoopledywhaa was founded in 1886 
-with the acquisition of the library of the late King Anthony.</note>. It was titled 'While
-thou art here', by Sir Edmund Peckwood<note type="editorial" resp="#EV">The manuscript 
-reads 'Petwood'.</note></p>
+opened the book he had taken from the Whoopledywhaaian National Library
+<note n="1" place="foot" type="authorial">The National Library of Whoopledywhaa was founded in 1886 with the acquisition of the library of the late King Anthony.</note>.
+It was titled 'While thou art here', by Sir Edmund Peckwood
+<note type="editorial" resp="#EV">The manuscript reads 'Petwood'.</note></p>
 ```
 
 ### Global attributes
