@@ -18,4 +18,10 @@ Elena Spadini
 
 
 
+**Section 4**
+TEI customization: ODD and schema
+- [slides](https://elespdn.github.io/talks/20190425_TEIcustomization/slides/TEIcustomizationSlides-rpubs.html#/)
+- [exercise](https://github.com/elespdn/elespdn.github.io/tree/master/talks/20190425_TEIcustomization/exercises)
+- exercise [materials](https://github.com/elespdn/elespdn.github.io/tree/master/talks/20190425_TEIcustomization/materials) 
+
 

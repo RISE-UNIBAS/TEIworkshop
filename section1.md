@@ -283,7 +283,7 @@ electric field and of a magnetic field." The brochure
 is dedicated "To Mlle Sklodowska with the respect and
 the friendship of the author P. Curie."
 
-Together they speak enormously, but about physic or
+Together they speak enormously, but about physics or
 themselves.
 ```
 Based on: “Marie Curie, So Honorable Woman”, in *The collected stories of Lydia Davis*
