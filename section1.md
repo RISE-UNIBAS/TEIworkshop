@@ -39,7 +39,7 @@ Additional information to these XML elements can be given in attributes, consist
 
 XML comments are delimited by start markers (<!--) and end markers (-->). Everything inside comments is ignored by XML processing software: it is said to be “commented out.”
 
-### Reference
+### W3C standard
 XML is a recommendation from the World Wide Web Consortium (W3C): https://www.w3.org/TR/xml/.
 
 ## Recap TEI
@@ -91,7 +91,8 @@ The TEI header (`<teiHeader>`) is mandatory and contains descriptive meta-inform
 <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
 	<fileDesc>
 		<titleStmt>
-			<title>The Strange Adventures of Dr. Burt Diddledygook: a machine-readable transcription</title>
+			<title>The Strange Adventures of Dr. Burt Diddledygook:
+			a machine-readable transcription</title>
 			<respStmt>
 			<resp>editor</resp>
 			<name xml:id="EV">Edward Vanhoutte</name>
@@ -114,7 +115,11 @@ The element `<text>` minimally contains the text body (`<body>`). The body conta
 ```xml
 <text xmlns="http://www.tei-c.org/ns/1.0">
 	<body>
-		<p>For the first time in twenty-five years, Dr Burt Diddledygook decided not to turn up to the annual meeting of the Royal Academy of Whoopledywhaa (RAW). It was a sunny day in late September 1960 bang on noontime and Dr Burt was looking forward to a stroll in the park instead. He hoped his fellow members of the RAW weren't even going to notice his absence.</p>
+		<p>For the first time in twenty-five years, Dr Burt Diddledygook decided not to
+		turn up to the annual meeting of the Royal Academy of Whoopledywhaa (RAW). It was a 
+		sunny day in late September 1960 bang on noontime and Dr Burt was looking forward 
+		to a stroll in the park instead. He hoped his fellow members of the RAW weren't 
+		even going to notice his absence.</p>
 	</body>
 </text>
 ```
@@ -137,11 +142,16 @@ Next to the `<body>`, a text can optionally contain front matter which may be en
 	</div>
 	</front>
 	<body>
-		<p>For the first time in twenty-five years, Dr Burt Diddledygook decided not to turn up to the annual meeting of the Royal Academy of Whoopledywhaa (RAW). It was a sunny day in late September 1960 bang on noontime and Dr Burt was looking forward to a stroll in the park instead. He hoped his fellow members of the RAW weren't even going to notice his absence.</p>
+		<p>For the first time in twenty-five years, Dr Burt Diddledygook decided not to 
+		turn up to the annual meeting of the Royal Academy of Whoopledywhaa (RAW). It was a 
+		sunny day in late September 1960 bang on noontime and Dr Burt was looking forward 
+		to a stroll in the park instead. He hoped his fellow members of the RAW weren't 
+		even going to notice his absence.</p>
 	</body>
 	<back>
 		<div type="colophon">
-			<p>Typeset in Haselfoot 37 and Henry 8. Printed and bound by Whistleshout, South Africa.</p>
+			<p>Typeset in Haselfoot 37 and Henry 8. Printed and bound by Whistleshout,
+			South Africa.</p>
 		</div>
 	</back>
 </text>
@@ -157,7 +167,7 @@ The TEI Guidelines define highlighting as “the use of any combination of typog
  (RAW).</p>
 ```
 
-### Logical and Semantic Features
+### Logical and semantic features
 
 Highlighted words or phrases in a text are commonly distinguished from their surroundings for a reason. Only a thorough understanding of the text and the language can lead to a correct identification and interpretation. The underlying semantics may be encoded with more specific elements than the generic `<hi>` element. Highlighting is commonly used to render the following logical and semantic features:
 
@@ -166,9 +176,12 @@ Highlighted words or phrases in a text are commonly distinguished from their sur
 - Technical terms (`<term>`), glosses (`<gloss>`), or documentation of XML elements, attributes, and classes.
 
 ```xml
-<p xmlns="http://www.tei-c.org/ns/1.0"><q>Plenty of options</q>
-, he thought, sat on a bench and opened the book he had taken from the Whoopledywhaaian National Library. It was titled 'While thou art here', by Sir Edmund Peckwood. While reading the first sentence, his placid expression turned to a certain <foreign>je ne sais quoi</foreign>
-: <quote>For the first time in twenty-five years, Dr Burt Diddledygook decided not to turn up to the annual meeting of the Royal Academy of Whoopledywhaa.</quote></p>
+<p xmlns="http://www.tei-c.org/ns/1.0"><q>Plenty of options</q>, he thought, sat on a bench 
+and opened the book he had taken from the Whoopledywhaaian National Library. It was titled 
+'While thou art here', by Sir Edmund Peckwood. While reading the first sentence, his placid 
+expression turned to a certain <foreign>je ne sais quoi</foreign>: <quote>For the first 
+time in twenty-five years, Dr Burt Diddledygook decided not to turn up to the annual 
+meeting of the Royal Academy of Whoopledywhaa.</quote></p>
 ```
 
 ### The physical structure
@@ -219,7 +232,9 @@ The <choice>
 The most explicit form of textual annotation is the addition of notes to the text using `<note>`. This element serves for the encoding of all kinds of annotations, whether they are already present in the text or supplied by the editor; whether they appear as block notes in the main text area, at the foot of the page, at the end of the chapter or volume, in the margin, or in some other place. The `@type` attribute can be used to distinguish between different types of annotations.
 
 ```xml
-<p xmlns="http://www.tei-c.org/ns/1.0">'Plenty of options', he thought, sat on a bench and opened the book he had taken from the Whoopledywhaaian National Library<note n="1" place="foot" type="authorial">The National Library of Whoopledywhaa was founded in 1886 with the acquisition of the library of the late King Anthony.</note>. It was titled 'While thou art here', by Sir Edmund Peckwood<note type="editorial" resp="#EV">The manuscript reads 'Petwood'.</note></p>
+<p xmlns="http://www.tei-c.org/ns/1.0">'Plenty of options', he thought, sat on a bench and opened the book he had taken from the Whoopledywhaaian National Library<note n="1" place="foot" type="authorial">The National Library of Whoopledywhaa was founded in 1886 with the acquisition of the library of the late King Anthony.</note>. It was titled 'While
+thou art here', by Sir Edmund Peckwood<note type="editorial" resp="#EV">The manuscript 
+reads 'Petwood'.</note></p>
 ```
 
 ### Global attributes
@@ -266,9 +281,10 @@ electric field and of a magnetic field." The brochure
 is dedicated "To Mlle Sklodowska with the respect and
 the friendship of the author P. Curie."
 
-Together they speak enormously, but about physic or themselves.
+Together they speak enormously, but about physic or
+themselves.
 ```
-Based on: "Marie Curie, So Honorable Woman", in *The collected stories of Lydia Davis*
+Based on: “Marie Curie, So Honorable Woman”, in *The collected stories of Lydia Davis*
 
 1. Encode this text as two paragraphs of prose.
 2. Indicate that they are written in English.
