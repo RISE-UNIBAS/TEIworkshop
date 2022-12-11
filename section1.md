@@ -232,7 +232,10 @@ The <choice>
 The most explicit form of textual annotation is the addition of notes to the text using `<note>`. This element serves for the encoding of all kinds of annotations, whether they are already present in the text or supplied by the editor; whether they appear as block notes in the main text area, at the foot of the page, at the end of the chapter or volume, in the margin, or in some other place. The `@type` attribute can be used to distinguish between different types of annotations.
 
 ```xml
-<p xmlns="http://www.tei-c.org/ns/1.0">'Plenty of options', he thought, sat on a bench and opened the book he had taken from the Whoopledywhaaian National Library<note n="1" place="foot" type="authorial">The National Library of Whoopledywhaa was founded in 1886 with the acquisition of the library of the late King Anthony.</note>. It was titled 'While
+<p xmlns="http://www.tei-c.org/ns/1.0">'Plenty of options', he thought, sat on a bench and
+opened the book he had taken from the Whoopledywhaaian National Library<note n="1" 
+place="foot" type="authorial">The National Library of Whoopledywhaa was founded in 1886 
+with the acquisition of the library of the late King Anthony.</note>. It was titled 'While
 thou art here', by Sir Edmund Peckwood<note type="editorial" resp="#EV">The manuscript 
 reads 'Petwood'.</note></p>
 ```
