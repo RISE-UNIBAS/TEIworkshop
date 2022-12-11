@@ -166,7 +166,7 @@ The TEI Guidelines define highlighting as “the use of any combination of typog
  (RAW).</p>
 ```
 
-## Logical and Semantic Features
+### Logical and Semantic Features
 
 Highlighted words or phrases in a text are commonly distinguished from their surroundings for a reason. Only a thorough understanding of the text and the language can lead to a correct identification and interpretation. The underlying semantics may be encoded with more specific elements than the generic `<hi>` element. Highlighting is commonly used to render the following logical and semantic features:
 
@@ -181,7 +181,7 @@ Highlighted words or phrases in a text are commonly distinguished from their sur
 ```
 
 ### The physical structure
-*This section and the following extensively are copied or reuse materials from https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/*
+*This section and the following reuse extensively materials from https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/*
 
 To represent the physical structure of the documents you encode, the TEI offers a series of “empty” ou “milestone” elements: instead of wrapping a whole passage of text, they simply mark the beginning of a new quire, page, etc. The advantage of empty elements is that they will not interfere with the markup representing the logical structure of the document. That way, a
 paragraph can start on one page and finish on another one withou causing any overlapping of the markup.
@@ -267,7 +267,13 @@ There are 11 global attributes, available on any TEI element. They are organized
 ## Exercise
 
 ```txt
-Perhaps she did not speak of it, even for an instant, with the physicist she has been seeing for several weeks, and who has brought her the offprint of an article titles "On symmetry in physical phenomena, the symmetry of an electric field and of a magnetic field." The brochure is dedicated "To Mlle Sklodowska with the respect and the friendship of the author P. Curie."
+Perhaps she did not speak of it, even for an instant,
+with the physicist she has been seeing for several weeks,
+and who has brought her the offprint of an article titled
+"On symmetry in physical phenomena, the symmetry of an
+electric field and of a magnetic field." The brochure
+is dedicated "To Mlle Sklodowska with the respect and
+the friendship of the author P. Curie."
 
 Together they speak enormously, but about physic or themselves.
 ```
