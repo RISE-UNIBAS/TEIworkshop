@@ -157,11 +157,134 @@ Next to the `<body>`, a text can optionally contain front matter which may be en
 ```
 
 
+### Renditional features
+
+The TEI Guidelines define highlighting as “the use of any combination of typographic features (font, size, hue, etc.) in a printed or written text in order to distinguish some passage of a text from its surroundings” (TEI Guidelines, section [3.3.1 What Is Highlighting?](https://tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COHQW)). The generic element `<hi>` (highlighting) can be used with a `@rend` or `@rendition` attribute describing its appearance in the text.
+
+```xml
+<p xmlns="http://www.tei-c.org/ns/1.0">For the first time in twenty-five years, Dr Burt Diddledygook decided not to turn up to the annual meeting of the <hi rend="italic">Royal Academy of Whoopledywhaa</hi>
+ (RAW).</p>
+```
+
+## Logical and Semantic Features
+
+Highlighted words or phrases in a text are commonly distinguished from their surroundings for a reason. Only a thorough understanding of the text and the language can lead to a correct identification and interpretation. The underlying semantics may be encoded with more specific elements than the generic `<hi>` element. Highlighting is commonly used to render the following logical and semantic features:
+
+- Emphasis (`<emph>`), foreign words (`<foreign>`), and other linguistically distinct uses (`<distinct>`) of highlighting.
+- The use of quotation marks in the representation of speech and thought (`<said>`), quotation (`<quote>`), cited quotation (`<cit>`), words or phrases mentioned (`<mentioned>`), and words or phrases for which the author or narrator indicates a disclaiming of responsibility (`<soCalled>`).
+- Technical terms (`<term>`), glosses (`<gloss>`), or documentation of XML elements, attributes, and classes.
+
+```xml
+<p xmlns="http://www.tei-c.org/ns/1.0"><q>Plenty of options</q>
+, he thought, sat on a bench and opened the book he had taken from the Whoopledywhaaian National Library. It was titled 'While thou art here', by Sir Edmund Peckwood. While reading the first sentence, his placid expression turned to a certain <foreign>je ne sais quoi</foreign>
+: <quote>For the first time in twenty-five years, Dr Burt Diddledygook decided not to turn up to the annual meeting of the Royal Academy of Whoopledywhaa.</quote></p>
+```
+
+### The physical structure
+*This section and the following extensively are copied or reuse materials from https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/*
+
+To represent the physical structure of the documents you encode, the TEI offers a series of “empty” ou “milestone” elements: instead of wrapping a whole passage of text, they simply mark the beginning of a new quire, page, etc. The advantage of empty elements is that they will not interfere with the markup representing the logical structure of the document. That way, a
+paragraph can start on one page and finish on another one withou causing any overlapping of the markup.
+
+The `<gb>` (gathering beginning) element can be used to mark up the limits of different quires or gatherings constituting a manuscripts. The `<pb>` (page beginning) element, marking the beginning of pages, is probably the most widely used of this series. Within the space of a page, `<cb>` (column beginning) and `<lb>` (line beginning) can be used to mark up the limits of
+columns and lines on the original document, respectively.
+
+### Editorial interventions: normalisation
+
+Editors have the possibility to point (and optionally offer a correction for) apparent errors in the text. The [element `<sic>`](http://www.tei-c.org/Vault/P5/3.0.0/doc/tei-p5-doc/en/html/ref-sic.html) in TEI, “(Latin for ‘thus’ or ‘so’) contains text reproduced although apparently incorrect or inaccurate,” as in the following example:
+
+```xml
+I’ve been <sic>hear</sic> before...
+```
+
+Editors may also choose to offer a regularised version of the text alongside its original spelling. The [`<choice>` element](http://www.tei-c.org/Vault/P5/3.0.0/doc/tei-p5-doc/en/html/ref-choice.html), which “groups a number of alternative encodings for the same point in a text,” can be used to combined the original version with the corrected or regularised one, as in the following example:
+
+```xml
+I’ve been <choice>
+	<sic>hear</sic>
+	<corr>here</corr>
+</choice> before...
+```
+
+When the spelling, grammar and punctuation rules of the source differ from the current ones, it might be desirable for the editor to offer a readble version more accessible to modern readers, as in the following example:
+
+```xml
+The <choice>
+	<orig>tragicall</orig>
+	<reg>tragical</reg>
+</choice>
+<choice>
+	<orig>historie</orig>
+	<reg>history</reg>
+</choice> of Hamlet Prince of <choice>
+	<orig>Denmarke</orig>
+	<reg>Denmark</reg></choice> by William <choice>	
+	<orig>Shake-speare</orig>
+	<reg>Shakespeare</reg>
+</choice>
+```
+
+### Notes
+The most explicit form of textual annotation is the addition of notes to the text using `<note>`. This element serves for the encoding of all kinds of annotations, whether they are already present in the text or supplied by the editor; whether they appear as block notes in the main text area, at the foot of the page, at the end of the chapter or volume, in the margin, or in some other place. The `@type` attribute can be used to distinguish between different types of annotations.
+
+```xml
+<p xmlns="http://www.tei-c.org/ns/1.0">'Plenty of options', he thought, sat on a bench and opened the book he had taken from the Whoopledywhaaian National Library<note n="1" place="foot" type="authorial">The National Library of Whoopledywhaa was founded in 1886 with the acquisition of the library of the late King Anthony.</note>. It was titled 'While thou art here', by Sir Edmund Peckwood<note type="editorial" resp="#EV">The manuscript reads 'Petwood'.</note></p>
+```
+
+### Global attributes
+
+There are 11 global attributes, available on any TEI element. They are organized in the classes and subclasses `att.global`, `att.global.rendition`, `att.global.responsibility`, `att.global.source`.
+
+`@xml:id` provides a unique identifier for an element.
+
+`@n` provides a number or other label for an element, which does not need to be unique within the document.
+
+`@xml:lang` indicates the language of an element using a “tag” generated according to BCP 47.
+
+`@xml:base` provides a base URI reference with which applications can resolve relative URI references into absolute URI references.
+
+`@xml:space` signals an intention about how white space should be managed by applications. It accepts values `default` or `preserve`.
+
+`@rend`
+	indicates how the element was rendered or presented in the source text.
+	
+`@style`
+	contains an expression in some formal style definition language which defines the rendering or presentation used for this element in the source text.
+	
+`@rendition`
+	points to a description of the rendering or presentation used for this element in the source text.
+	
+`@cert`
+	signifies the degree of certainty associated with the intervention or interpretation.
+	
+`@resp`
+	indicates the agency responsible for the intervention or interpretation.
+	
+`@source`
+	specifies the source from which some aspect of this element is drawn.
 
 
+## Exercise
 
-## Reuse of
-https://teibyexample.org/
+```txt
+Perhaps she did not speak of it, even for an instant, with the physicist she has been seeing for several weeks, and who has brought her the offprint of an article titles "On symmetry in physical phenomena, the symmetry of an electric field and of a magnetic field." The brochure is dedicated "To Mlle Sklodowska with the respect and the friendship of the author P. Curie."
+
+Together they speak enormously, but about physic or themselves.
+```
+Based on: "Marie Curie, So Honorable Woman", in *The collected stories of Lydia Davis*
+
+1. Encode this text as two paragraphs of prose.
+2. Indicate that they are written in English.
+3. Indicate the number of the paragraph.
+4. Encode all the names with the element [`<persName>`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-persName.html).
+5. Encode “P.” as an abbreviation with its corresponding expansions ('Pierre').
+6. Encode the title of the brochure, using the element [`<title>`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html).
+7. Encode the dedication using [`<q>`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-q.html).
+
+
+## Reuse materials from
+- https://teibyexample.org/
+- https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/
 
 
 
