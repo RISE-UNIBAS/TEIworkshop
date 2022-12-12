@@ -26,22 +26,21 @@ Elena Spadini
 
 **Section 3**
 
-- An introduction to searching in oXygen
+1. An introduction to searching in oXygen
 using [XPath](https://dixit.uni-koeln.de/wp-content/uploads/2015/04/Camp2-4-James_Cummings_-_An_introduction_to_searching_in_oXygen_using_XPath__talk.pdf), by James Cummings
-- [exercise](docs/xpath-exercise.md)
+2. [Exercise](docs/xpath-exercise.md)
 
 
 
 **Section 4**
 
-TEI customization: ODD and schema
-- [slides](https://elespdn.github.io/talks/20190425_TEIcustomization/slides/TEIcustomizationSlides-rpubs.html#/)
-- [exercise](https://github.com/elespdn/elespdn.github.io/tree/master/talks/20190425_TEIcustomization/exercises)
-- exercise [materials](https://github.com/elespdn/elespdn.github.io/tree/master/talks/20190425_TEIcustomization/materials) 
+1. TEI customization: ODD and schema
+	- [slides](https://elespdn.github.io/talks/20190425_TEIcustomization/slides/TEIcustomizationSlides-rpubs.html#/)
+	- [exercise](https://github.com/elespdn/elespdn.github.io/tree/master/talks/20190425_TEIcustomization/exercises)
+	- exercise [materials](https://github.com/elespdn/elespdn.github.io/tree/master/talks/20190425_TEIcustomization/materials) 
 
 
----
-
+<br/><br/>
 
 ## And to conclude ...
 
@@ -49,6 +48,7 @@ TEI customization: ODD and schema
 
 From Melissa Terras, Edward Vanhoutte, and Ron Van den Branden. TEI by Example. https://teibyexample.org/tutorials/TBED00v00.htm#summary
 
+<br/><br/>
 
 ## Reuse materials from
 
