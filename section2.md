@@ -134,8 +134,11 @@ An alternative is to define a pattern that the canonical reference must match an
 	<cRefPattern matchPattern="(.+) (.+):(.+)"
 	replacementPattern="http://vulsearch.sourceforge.net/html/
 	$1.html#x$2_$3">
-		<p>This pointer pattern extracts and references the <q>book,</q> <q>chapter,</q> and <q>verse</q> parts of a biblical reference pointing to a single verse, like “Gn 1:1”, and reconstructs a link to an online version of the biblical text.</p>
-		<p>The following list of abbreviations has been used for the books of the Bible: Gn: Genesis; Exodus: Ex; Leviticus: Lv; [etc.]</p>
+		<p>This pointer pattern extracts and references the <q>book,</q> <q>chapter,</q>
+		and <q>verse</q> parts of a biblical reference pointing to a single verse, like
+		“Gn 1:1”, and reconstructs a link to an online version of the biblical text.</p>
+		<p>The following list of abbreviations has been used for the books of the Bible:
+		Gn: Genesis; Exodus: Ex; Leviticus: Lv; [etc.]</p>
 	</cRefPattern>
 </refsDecl>
 ```
@@ -335,10 +338,13 @@ It is important to remember that every element is datable, as in the following e
 	 in <origPlace><country>England</country></origPlace>
   </origin>
   <provenance>
-	 Previously owned by <persName type="person" role="formerOwner" ref="http://viaf.org/viaf/73979081"> Sir Thomas Phillipps (1792-1872)</persName>, MS. 13443* and 13446
+	  Previously owned by <persName type="person" role="formerOwner"
+	  ref="http://viaf.org/viaf/73979081"> Sir Thomas Phillipps (1792-1872)</persName>,
+	  MS. 13443* and 13446
   </provenance>
   <provenance>
-	Previously owned by <persName type="person" role="formerOwner" ref="http://viaf.org/viaf/11255508 "> Sir Robert Leicester Harmsworth</persName>
+	  Previously owned by <persName type="person" role="formerOwner"
+	  ref="http://viaf.org/viaf/11255508 "> Sir Robert Leicester Harmsworth</persName>
   </provenance>
   <acquisition>
 	Harmsworth Trust sale at Sotheby's, <date when="1945-10-16">16 Oct. 1945</date>,
