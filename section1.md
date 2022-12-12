@@ -4,6 +4,7 @@ See [slides](docs/spadini_TEI_coffeeLecture.pdf).
 
 ## XML editors
 
+XML files can be opened and edited with any text editor. The most widely used and with specific support for TEI currently are:
 - [oXygen](https://www.oxygenxml.com/)
 - [Visual Studio Code](https://code.visualstudio.com/). How to use VSCode for [XML and TEI encoding](http://phc.uni.wroc.pl/interreg/w/losada/VSCode.html)
 
@@ -282,11 +283,12 @@ Based on: “Marie Curie, So Honorable Woman”, in *The collected stories of Ly
 6. Encode the title of the brochure, using the element [`<title>`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html).
 7. Encode the dedication using [`<q>`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-q.html).
 
+**Bonus exercise**. If you are already finished, take a test at the TEI by Example project: https://teibyexample.org/tests/. You might want to start with Test n° 1 "Common Structure and Elements".
 
 
 ## Reuse materials from
 
-This tutorial extensively reuse materials from:
+This tutorial extensively reuses materials from:
 
 - Melissa Terras, Edward Vanhoutte, and Ron Van den Branden. *TEI by Example*. https://teibyexample.org (accessed December 2022)
 - *Digital Editing of Medieval Texts: A Textbook*, ed. by Marjorie Burghart. https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/  (accessed December 2022)

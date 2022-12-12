@@ -21,6 +21,8 @@ Elena Spadini
 [**Section 2**](section2.md)
 1. Logical and semantic features
 2. Citations and references
+3. Manuscripts and early prints description
+4. Exercise
 
 
 

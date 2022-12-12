@@ -143,6 +143,215 @@ An alternative is to define a pattern that the canonical reference must match an
 The replacement pattern will transform 'Gn 1:1' in http://vulsearch.sourceforge.net/html/Gn.html#x1_1.
 
 
+## Manuscripts and early prints description
+
+The source description inside `<sourceDesc>` is the third required subsection of the file description withing `<teiHeader>`. It generally contains a `<p>` (paragraph), `<bibl>` (bibliographic entry) or `<msDesc>` (manuscript description), similar elements or a list of them. We focus here on `<msDesc>`, which is suitable both for manuscripts and for early prints.
+
+A `<msDesc>` is required to contain a `<msIdentifier>` usually containing its geographical and archival location, and manuscript identification information.
+
+This `<msIdentifier>` can be followed by one or more paragraphs, or more structured
+information.
+
+Example of semi-structured descriptions are the following:
+
+```xml
+<msDesc xml:id="MySampleManuscript">
+   <msIdentifier>
+	  <msName>My Manuscript</msName>
+   </msIdentifier>
+   <p>One or more paragraphs concerning various aspects of the manuscript.</p>
+</msDesc>
+```
+
+and
+
+```xml
+<msDesc xml:id="MySampleManuscript">
+   <msIdentifier>
+	  <msName>My Manuscript</msName>
+   </msIdentifier>
+   <msContents>
+	  <p>One or more paragraphs concerning the manuscript's content.</p>
+   </msContents>
+   <physDesc>
+	  <p>One or more paragraphs concerning the manuscript's physical description.</p>
+   </physDesc>
+   <history>
+	  <p>One or more paragraphs concerning the manuscript's history.</p>
+   </history>
+</msDesc>
+```
+
+A more structured description is detailed below.
+
+### Manuscript identifier
+
+In general as many details should be provided in the `<msIdentifier>` as are necessary to be able to easily locate the manuscript. An example of a structured `<msIdentifier>` is the following:
+
+
+### Intellectual content
+
+To detail the intellectual contents of a manuscript, the `<msContents>` element is generally used with `<msItem>` elements, as in the following example:
+
+```xml
+<msContents>
+ <msItem n="1">
+	<locus from="1r" to="4v">fol. Ir - fol. 4v</locus>
+	<p>Description of this item</p>
+ </msItem>
+ <msitem n="2">
+	<locus from="5r" to="109r">fol. 5r - fol. 109r</locus>
+	<p>Description of this item</p>
+ </msItem>
+</msContents>
+```
+
+The `<msItem>` element itself can contain additional information, as following:
+
+```xml
+<msItem n="2">
+ <locus from="132r" to="134v">(fols. 132r—134v)</locus>
+ <title>List of emperors</title>
+ <note>with the lengths of their reigns, as far as Alexios III, after which is
+	recorded the Latin capture of CP.</note>
+ <incipit xml:lang="gre">...</incipit>
+ <explicit xml:lang="gre">...</explicit>
+ <textLang xml:lLang="grce">Greek</textLang>
+</msItem>
+```
+
+### Describing the physical object
+
+Each section of the physical description can incorporate more details or structure
+provided. Here it is an example:
+
+```xml
+<physDesc>
+ <objectDesc>
+	<supportDesc>
+	   <p>...</p>
+	</supportDesc>
+	<LayoutDesc>
+	   <p>...</p>
+	</LayoutDesc>
+ </objectDesc>
+ <handDesc>
+	<handNote>
+	   <p>...</p>
+	</handNote>
+ </handDesc>
+ <typeDesc>
+	<typeNote>
+	   <p>...</p>
+	</typeNote>
+ </typeDesc>
+ <scriptDesc>
+	<scriptNote>
+	   <p>...</p>
+	</scriptNote>
+ </scriptDesc>
+ <musicNotation>
+	<p>...</p>
+ </musicNotation>
+ <decoDesc>
+	<decoNote>
+	   <p>...</p>
+	</decoNote>
+ </decoDesc>
+ <additions>
+ 	<p>...</p>
+</additions>
+ <bindingDesc>
+	<binding>
+	   <p>...</p>
+	</binding>
+ </bindingDesc>
+ <sealDesc>
+	<seal>
+	   <p>...</p>
+	</seal>
+ </sealDesc>
+ <accMat>
+	<p>...</p>
+ </accMat>
+</physDesc>
+```
+
+An example of the `<handDesc>`, `<typeDesc>` and `<scriptDesc>` is given here:
+
+```xml
+<handDesc>
+	<handNote xml:id="handID" medium="inkType" scope="major" scribe="Scribel"
+	   scribeRef="#scribeID" script="scriptName" scriptRef="#scriptl">
+	   <p>One hand note for each identified hand in the manuscript with optional
+		  attributes for a hand id number, the medium of the hand, the scope of its
+		  writing stint, a scribe or reference to more information about one, a script
+		  or reference to one</p>
+	</handNote>
+</handDesc>
+<typeDesc>
+	<typeNote>
+	   <p>If describing a source with printed aspects, an optional typeNote for each
+		  typographic feature</p>
+	</typeNote>
+</typeDesc>
+<scriptDesc>
+	<scriptNote xml:id="scriptl">
+	   <p>Discussion of a particular script in the manuscript, its scriptorium, or
+		  usual use</p>
+	</scriptNote>
+</scriptDesc>
+```
+
+### History
+
+The section devoted to the history of the manuscript can be structured as following:
+
+```xml
+<history>
+  <summary>
+	 <!-- Summary entry of history of the manuscript -->
+  </summary>
+  <origin>
+	 <!-- Information concerning the origin and creation of the manuscript -->
+  </origin>
+  <p rovenance>
+	 <!-- Information concerning any single identifiable episode during the history
+of the manuscript after its creation but before its acquisition -->
+</provenance>
+	 <acquisition>
+		<!-- Information concerning the acquisition of the manuscript
+by the current resource-holding institution -->
+	 </acquisition>
+</history>
+```
+
+It is important to remember that every element is datable, as in the following example:
+```xml
+<history>
+  <origin>
+	 Written in the
+	 <origDate calendar="Gregorian" notAfter="1500" notBefore="1400">15th century</origDate>
+	 in <origPlace><country>England</country></origPlace>
+  </origin>
+  <provenance>
+	 Previously owned by <persName type="person" role="formerOwner" ref="http://viaf.org/viaf/73979081"> Sir Thomas Phillipps (1792-1872)</persName>, MS. 13443* and 13446
+  </provenance>
+  <provenance>
+	Previously owned by <persName type="person" role="formerOwner" ref="http://viaf.org/viaf/11255508 "> Sir Robert Leicester Harmsworth</persName>
+  </provenance>
+  <acquisition>
+	Harmsworth Trust sale at Sotheby's, <date when="1945-10-16">16 Oct. 1945</date>,
+	lot 2051, bought by Quaritch for £38.
+  </acquisition>
+</history>
+```
+
+### Additional metadata
+
+Additional metadata, such as information about the sources of the manuscript description, events in its custodial history (such as photography and conservation), digital or print surrogates for the manuscript, and secondary works concerning the manuscript. These may be provided in an `<additional>` element which contains (optional) `<adminInfo>`, `<surrogates>`, and `<listBibl>` elements.
+
+
 
 
 ## Reuse materials from
