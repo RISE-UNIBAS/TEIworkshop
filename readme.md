@@ -54,7 +54,7 @@ From Melissa Terras, Edward Vanhoutte, and Ron Van den Branden. TEI by Example. 
 
 ## Reuse materials from
 
-The sections "Recap XML", "Recap TEI", "Logical and semantic features", "Citations and references" extensively reuse materials from:
+The sections "Recap XML", "Recap TEI", "Logical and semantic features", "Citations and references" and "Manuscripts and early prints description" extensively reuse materials from:
 
 - Melissa Terras, Edward Vanhoutte, and Ron Van den Branden. *TEI by Example*. https://teibyexample.org (accessed December 2022)
 - *Digital Editing of Medieval Texts: A Textbook*, ed. by Marjorie Burghart. https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/  (accessed December 2022)
