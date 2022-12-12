@@ -170,25 +170,8 @@ The TEI Guidelines define highlighting as “the use of any combination of typog
  (RAW).</p>
 ```
 
-### Logical and semantic features
-
-Highlighted words or phrases in a text are commonly distinguished from their surroundings for a reason. Only a thorough understanding of the text and the language can lead to a correct identification and interpretation. The underlying semantics may be encoded with more specific elements than the generic `<hi>` element. Highlighting is commonly used to render the following logical and semantic features:
-
-- Emphasis (`<emph>`), foreign words (`<foreign>`), and other linguistically distinct uses (`<distinct>`) of highlighting.
-- The use of quotation marks in the representation of speech and thought (`<said>`), quotation (`<quote>`), cited quotation (`<cit>`), words or phrases mentioned (`<mentioned>`), and words or phrases for which the author or narrator indicates a disclaiming of responsibility (`<soCalled>`).
-- Technical terms (`<term>`), glosses (`<gloss>`), or documentation of XML elements, attributes, and classes.
-
-```xml
-<p xmlns="http://www.tei-c.org/ns/1.0"><q>Plenty of options</q>, he thought, sat on a bench 
-and opened the book he had taken from the Whoopledywhaaian National Library. It was titled 
-'While thou art here', by Sir Edmund Peckwood. While reading the first sentence, his placid 
-expression turned to a certain <foreign>je ne sais quoi</foreign>: <quote>For the first 
-time in twenty-five years, Dr Burt Diddledygook decided not to turn up to the annual 
-meeting of the Royal Academy of Whoopledywhaa.</quote></p>
-```
 
 ### The physical structure
-*This section and the following reuse extensively materials from https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/*
 
 To represent the physical structure of the documents you encode, the TEI offers a series of “empty” ou “milestone” elements: instead of wrapping a whole passage of text, they simply mark the beginning of a new quire, page, etc. The advantage of empty elements is that they will not interfere with the markup representing the logical structure of the document. That way, a
 paragraph can start on one page and finish on another one withou causing any overlapping of the markup.
@@ -300,11 +283,17 @@ Based on: “Marie Curie, So Honorable Woman”, in *The collected stories of Ly
 7. Encode the dedication using [`<q>`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-q.html).
 
 
+
 ## Reuse materials from
+
+This tutorial extensively reuse materials from:
+
 - Melissa Terras, Edward Vanhoutte, and Ron Van den Branden. *TEI by Example*. https://teibyexample.org (accessed December 2022)
-- *Digital Editing of Medieval Texts: A Textbook*, https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/  (accessed December 2022)
+- *Digital Editing of Medieval Texts: A Textbook*, ed. by Marjorie Burghart. https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/  (accessed December 2022)
 
 
+## License
+See [readme](readme.md).
 
 
 
