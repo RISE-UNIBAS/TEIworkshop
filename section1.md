@@ -39,6 +39,9 @@ Additional information to these XML elements can be given in attributes, consist
 
 XML comments are delimited by start markers (<!--) and end markers (-->). Everything inside comments is ignored by XML processing software: it is said to be “commented out.”
 
+### Well formed and valid
+An XML document is well formed when it complies with the XML syntax. An XML document is valid against a schema.
+
 ### W3C standard
 XML is a recommendation from the World Wide Web Consortium (W3C): https://www.w3.org/TR/xml/.
 
@@ -283,7 +286,7 @@ electric field and of a magnetic field." The brochure
 is dedicated "To Mlle Sklodowska with the respect and
 the friendship of the author P. Curie."
 
-Together they speak enormously, but about physics or
+Together they speak enormously, but about physics  or
 themselves.
 ```
 Based on: “Marie Curie, So Honorable Woman”, in *The collected stories of Lydia Davis*
@@ -298,8 +301,8 @@ Based on: “Marie Curie, So Honorable Woman”, in *The collected stories of Ly
 
 
 ## Reuse materials from
-- https://teibyexample.org/
-- https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/
+- Melissa Terras, Edward Vanhoutte, and Ron Van den Branden. *TEI by Example*. https://teibyexample.org (accessed December 2022)
+- *Digital Editing of Medieval Texts: A Textbook*, https://www.digitalmanuscripts.eu/digital-editing-of-medieval-texts-a-textbook/  (accessed December 2022)
 
 
 
