@@ -19,10 +19,8 @@ Elena Spadini
 
 **Section 3**
 
-An introduction to searching in oXygen
-using XPath, by James Cummings
-
-- [slides](https://dixit.uni-koeln.de/wp-content/uploads/2015/04/Camp2-4-James_Cummings_-_An_introduction_to_searching_in_oXygen_using_XPath__talk.pdf)
+- An introduction to searching in oXygen
+using [XPath](https://dixit.uni-koeln.de/wp-content/uploads/2015/04/Camp2-4-James_Cummings_-_An_introduction_to_searching_in_oXygen_using_XPath__talk.pdf), by James Cummings
 - [exercise](docs/xpath-exercise.md)
 
 **Section 4**
