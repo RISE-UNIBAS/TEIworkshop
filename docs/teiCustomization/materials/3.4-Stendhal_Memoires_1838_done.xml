@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-stylesheet type="text/css" href="visualize-tei-xml.css"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>EXERCISE 03 · Named entities</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="PB1647">
+                  <persName>Pierre Bayle</persName>
+                  <birth when="1647-11-18">18-11-1647</birth>
+                  <death when="1706-12-28">28-12-1706</death>
+                  <occupation>writer</occupation>
+                  <nationality>French</nationality>
+                  <idno type="INSI">0000000122807284</idno>
+               </person>
+               <person xml:id="CLM1689">
+                  <persName>Charles Louis de Montesquieu</persName>
+                  <birth when="1689-01-18">18-01-1689</birth>
+                  <death when="1755-02-10">10-02-1755</death>
+                  <occupation>philosopher</occupation>
+                  <occupation>writer</occupation>
+                  <nationality>French</nationality>
+                  <idno type="INSI">0000000120957940</idno>
+               </person>
+               <person xml:id="AT1805">
+                  <persName>Alexis de Tocqueville</persName>
+                  <birth when="1805-07-29">29-07-1805</birth>
+                  <death when="1859-04-16">16-04-1859</death>
+                  <occupation>historian</occupation>
+                  <nationality>French</nationality>
+                  <idno type="ISNI">0000000121371933</idno>
+               </person>
+               <person xml:id="S1783">
+                  <persName>
+                     <forename>Marie-Henri</forename>
+                     <surname>Beyle</surname>
+                     <addName type="pseudonym">Stendhal</addName>
+                  </persName>
+                  <birth when="1783-01-23">23-01-1783</birth>
+                  <death when="1842-03-23">23-03-1842</death>
+                  <occupation>writer</occupation>
+                  <nationality>French</nationality>
+                  <idno type="ISNI">0000000120981326</idno>
+                  <note>Stendhal is a pseudonym, which the writer took from the German city of Stendal</note>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="paris">
+                  <placeName>Paris</placeName>
+                  <country>France</country>
+                  <location>
+                     <!--lat, long-->
+                     <geo>48.85341,2.3488</geo>
+                  </location>
+                  <idno type="GeoNames">2988507</idno>
+               </place>
+               <place xml:id="lyon">
+                  <placeName>Lyon</placeName>
+                  <country>France</country>
+                  <location>
+                     <!--lat, long-->
+                     <geo>45.74846,4.84671</geo>
+                  </location>
+                  <idno type="GeoNames">2996944</idno>
+               </place>
+               <place xml:id="marseille">
+                  <placeName>Marseille</placeName>
+                  <country>France</country>
+                  <location>
+                     <!--lat, long-->
+                     <geo>43.29695,5.38107</geo>
+                  </location>
+                  <idno type="GeoNames">2995469</idno>
+               </place>
+               <place xml:id="grenoble">
+                  <placeName>Grenoble</placeName>
+                  <country>France</country>
+                  <location>
+                     <!--lat, long-->
+                     <geo>45.17155,5.72239</geo>
+                  </location>
+                  <idno type="GeoNames">3014728</idno>
+               </place>
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+   </teiHeader>
+   <!--Historical Personography  / https://mapoflondon.uvic.ca/historical_personography.htm-->
+   <text>
+      <body>
+         <p>À <placeName ref="#paris">Paris</placeName>, la distraction est trop continuelle. Même pour le jeune homme de vingt ans qui a le
+            bonheur de ne compter sur aucun héritage, que de moyens de plaisir! que de choses viennent chaque jour assiéger son attention!
+            Quel est à <placeName ref="#paris">Paris</placeName> l’homme de vingt ans qui a lu, en cherchant à y trouver des erreurs, les
+            huit volumes de <persName ref="#CLM1689">Montesquieu</persName>?</p>
+         <p>On sent bien que, courant comme je le fais, je n’ai le temps de voir ni la société de province, ni les jeunes gens; tous ces
+            jugements me sont donnés par un homme d’un esprit net et profond, qui habite ses terres depuis <date when="1830">1830</date>.
+            Dans presque toutes les villes où je me suis un peu arrêté, <placeName ref="#lyon">Lyon</placeName>, <placeName ref="#marseille">Marseille</placeName>,
+               <placeName ref="#grenoble">Grenoble</placeName>, j’ai entrevu des jeunes gens qui me semblent faits pour arriver à tout. Je pense même que
+            les hommes de mérite de l’an <date when="1850">1850</date> seront pris pour la plupart loin de <placeName ref="#paris"
+               >Paris</placeName>. Pour faire un homme distingué, il faut à vingt ans cette chaleur d’âme, cette duperie, si l’on veut, que
+            l’on ne rencontre guère qu’en province; il faut aussi cette instruction philosophique et dégagée de toute fausseté que l’on ne
+            trouve que dans les bons collèges de <placeName ref="#paris">Paris</placeName>.</p>
+         <p>Mais la <hi rend="italics">faculté de vouloir</hi> manque de plus en plus à <placeName ref="#paris">Paris</placeName> ; on ne
+            lit pas sérieusement les bons livres: <persName ref="#PB1647">Bayle</persName>, <persName ref="#CLM1689"
+               >Montesquieu</persName>, <persName ref="#AT1805">Tocqueville</persName>, etc.; on ne lit que les fadaises modernes, et
+            encore afin de pouvoir en parler à mesure qu’elles paraissent.</p>
+      </body>
+   </text>
+</TEI>

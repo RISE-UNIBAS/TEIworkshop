@@ -37,9 +37,9 @@ using [XPath](https://dixit.uni-koeln.de/wp-content/uploads/2015/04/Camp2-4-Jame
 **Section 4**
 
 1. TEI customization: ODD and schema
-	- [slides](https://elespdn.github.io/talks/20190425_TEIcustomization/slides/TEIcustomizationSlides-rpubs.html#/)
-	- [exercise](https://github.com/elespdn/elespdn.github.io/tree/master/talks/20190425_TEIcustomization/exercises)
-	- exercise [materials](https://github.com/elespdn/elespdn.github.io/tree/master/talks/20190425_TEIcustomization/materials) 
+	- [slides](doc/teiCustomization/slides/TEIcustomizationSlides-rpubs.html#/)
+	- [exercise](doc/teiCustomization/exercises)
+	- exercise [materials](doc/teiCustomization/materials) 
 
 
 <br/><br/>
