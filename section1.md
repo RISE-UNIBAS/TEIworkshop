@@ -8,7 +8,7 @@ XML files can be opened and edited with any text editor. The most widely used an
 - [oXygen](https://www.oxygenxml.com/)
 - [Visual Studio Code](https://code.visualstudio.com/). How to use VSCode for [XML and TEI encoding](http://phc.uni.wroc.pl/interreg/w/losada/VSCode.html)
 
-## Recap XML
+## Basics of XML
 
 *This section and the following extensively reuse the tutorials at https://teibyexample.org.*
 
@@ -46,7 +46,7 @@ An XML document is well formed when it complies with the XML syntax. An XML docu
 ### W3C standard
 XML is a recommendation from the World Wide Web Consortium (W3C): https://www.w3.org/TR/xml/.
 
-## Recap TEI
+## Basics of TEI
 
 ### General structure
 A full TEI document consists of one single `<TEI>` element, which consists of two major components:
