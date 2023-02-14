@@ -194,7 +194,7 @@ In general as many details should be provided in the `<msIdentifier>` as are nec
 ```xml
 <msIdentifier>
   <settlement>Oxford</settlement>
-  <repository>Bodleian Library</repository>
+  <institution>Bodleian Library</institution>
   <idno>MS. Add. A. 61</idno>
   <altIdentifier type="SC">
     <idno>28843</idno>

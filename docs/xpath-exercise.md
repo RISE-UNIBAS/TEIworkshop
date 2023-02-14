@@ -1,5 +1,6 @@
 # XPath exercise in oXygen
 
+CC-BY. Elena Spadini, Research and Infrastructure Support, University of Basel.
 
 ## Data
 Download data from
@@ -45,7 +46,7 @@ oXygen gives the possibility to change the scope of the XPath query. You can set
 
 Change it to Project, to include all the XML files contained in the directory specified as the Project directory.
 
-Now we want to know who are the senders of the almost 200 letters. Information about senders and receivers are encoded within the metadata, in the element `<correspDesc>`. Type `//correspDesc` to obtain the corresponding element in all files: the results are 182 items. This time, the left part of results panel is empty, because this element does not immediately contain text, but only other elements. We can anyway double-click on any line and observe the structure of `<correspDesc>`.
+Now we want to know who are the senders of the almost 200 letters. Information about senders and receivers are encoded within the metadata, in the element `<correspDesc>`. Type `//correspDesc` to obtain the corresponding element in all files: the results are 182 items. This time, the left part of results panel is empty, because this element does not immediately contain text, but only other elements. Scroll on the right to obtain the files path. We can double-click on any line to open the corresponding file and observe the structure of `<correspDesc>`.
 
 `<correspDesc>` contains two `<correspAction>`, one of type 'sent' and one of type 'received'. Let's restrict our query to only the 'sent' actions. Try yourself and then see Answer 3.
 

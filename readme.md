@@ -4,6 +4,12 @@ University of Basel, Research and Infrastructure Support (RISE)
 
 Elena Spadini
 
+## Preliminary: these materials, markdown, html
+
+The course materials are mainly written in markdown. Markdown is a lightweight markup language for creating formatted text. If you've never used the Markdown language before, you might have a look at this [cheat sheet](https://www.markdownguide.org/cheat-sheet) and follow this [tutorial](https://www.markdowntutorial.com/) (max 30 minutes; we suggest to use the English version, because the others contain translation errors). Markdown files can be read and written in any text-editor (Notepad, TextEdit, Gedit, etc.) and some of them have markdown plugins (Sublime, VSCode, etc.). Editors specific for markdown also exists, such as Typora, Abricotine, Caret and others.
+
+The rest of the materials are XML or HTML files. HTML files, for example slides, should be opened in a browser.
+
 
 ## Table of contents
 

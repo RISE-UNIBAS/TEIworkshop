@@ -215,6 +215,15 @@ The <choice>
 </choice>
 ```
 
+The `<choice>` element can also be used to offer an alternative between an abbreviated and expanded form, such as:
+```xml
+My old friend <choice>
+	<abbr>Mr.</abbr>
+	<expan>Mister</expan>
+</choice> Plum
+```
+
+
 ### Notes
 The most explicit form of textual annotation is the addition of notes to the text using `<note>`. This element serves for the encoding of all kinds of annotations, whether they are already present in the text or supplied by the editor; whether they appear as block notes in the main text area, at the foot of the page, at the end of the chapter or volume, in the margin, or in some other place. The `@type` attribute can be used to distinguish between different types of annotations.
 

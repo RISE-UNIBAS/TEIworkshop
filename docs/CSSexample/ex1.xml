@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!-- LINK TO THE CSS, IN THE SAME FOLDER -->
+<?xml-stylesheet type="text/css" href="ex1.css"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Exercise for TEI Workshop</title>
+            <author>Research and Infrastructure Support, University of Basel</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>University of Basel, for internal use only</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Excerpt from: “Marie Curie, So Honorable Woman”, in Lydia Davis, The collected
+               stories of Lydia Davis, Penguin, 2014.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+
+   <text>
+      <body xml:lang="en">
+         <p n="1">Perhaps she did not speak of it, even for an instant, with the physicist she has
+            been seeing for several weeks, and who has brought her the offprint of an article titled
+               <title>"On symmetry in physical phenomena, the symmetry of an electric field and of a
+               magnetic field."</title> The brochure is dedicated <q>"To <persName>Mlle
+                  Sklodowska</persName> with the respect and the friendship of the author <persName><choice>
+                     <abbr>P.</abbr>
+                     <expan>Pierre</expan>
+                  </choice> Curie</persName>."</q>
+         </p>
+         <p n="2"> Together they speak enormously, but about physics or themselves.</p>
+      </body>
+   </text>
+   
+</TEI>

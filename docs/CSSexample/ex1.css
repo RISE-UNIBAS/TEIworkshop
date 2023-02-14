@@ -1,0 +1,27 @@
+
+p {
+    color: red;
+    display: block;
+}
+
+
+p::after {  /* add line break after each paragraph */
+ content: "\A ";
+ }
+
+title {
+    font-style: italic;
+}
+
+persName {
+    font-weight: bold;
+}
+
+
+abbr {
+    display: none;
+}
+
+teiHeader {
+    display: none;
+}
