@@ -34,11 +34,23 @@ The question mark `?` in the XML declaration signals that this is a processing i
 </document>
 ```
 
-XML elements are delimited by start tags (e.g., `<document>`) and end tags (e.g., `</document>`). 
+Each XML document has a **root element**, containing all the other elements. In the example above, the root element is `<document>`.
 
-Additional information to these XML elements can be given in attributes, consisting of a name (e.g., `@number`) and a value (e.g., "1"). Attributes can only occur within the start tag of an element. In documentations, attributes are generally prefixed with the “at” sign, e.g., `@number`.
+XML elements are delimited by **start tags** (e.g., `<document>`) and **end tags** (e.g., `</document>`).
 
-XML comments are delimited by start markers (<!--) and end markers (-->). Everything inside comments is ignored by XML processing software: it is said to be “commented out.”
+XML elements cannot **overlap**, but should be nested in a tree or Matryoshka like structure. The following, for example, is NOT valid:
+```
+<document>
+	<page n="1"> <paragraph> This is a very long </page><page n="2">paragraph spanning over two pages.</paragraph></page>
+</document>
+```
+
+**Empty elements**, or milestones, are a good way to avoid overlapping structures. Empty elements can be expressed with start and end tags (`<pageBreak></pageBreak>`) or with a shorter syntax: `<pageBreak/>`. Note that the `/` slash is after the name of the element, and not before as in the end tag.
+
+
+Additional information to XML elements can be given in **attributes**, consisting of a name (e.g., `@number`) and a value (e.g., "1"). Attributes can only occur within the start tag of an element. In documentations, attributes are generally prefixed with the “at” sign, e.g., `@number`.
+
+XML **comments** are delimited by start markers (<!--) and end markers (-->). Everything inside comments is ignored by XML processing software: it is said to be “commented out.”
 
 ### Well formed and valid
 An XML document is well formed when it complies with the XML syntax. An XML document is valid against a schema.
