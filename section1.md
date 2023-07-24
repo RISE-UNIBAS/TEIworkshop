@@ -94,7 +94,7 @@ In the previous example, the TEI namespace is declared as the “default” name
 
 Here, the namespace declaration `xmlns:tei="http://www.tei-c.org/ns/1.0"` on the `<TEI>` element binds the TEI namespace URI (http://www.tei-c.org/ns/1.0) to the namespace prefix `tei`. All descendant elements using that prefix before the actual element name belong to this namespace (e.g., `<tei:teiHeader>`).
 
-It is possible to use elements from different namespace in the same XML document.
+It is possible to use elements from different namespaces in the same XML document.
 
 ### TEI Header
 The TEI header (`<teiHeader>`) is mandatory and contains descriptive meta-information about the document. The `<teiHeader>` minimally contains a description of the electronic file inside a `<fileDesc>`. The latter element consists of three mandatory components:
@@ -304,7 +304,7 @@ Based on: “Marie Curie, So Honorable Woman”, in *The collected stories of Ly
 6. Encode the title of the brochure, using the element [`<title>`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html).
 7. Encode the dedication using [`<q>`](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-q.html).
 
-**Bonus exercise**. If you are already finished, take a test at the TEI by Example project: https://teibyexample.org/tests/. You might want to start with Test n° 1 "Common Structure and Elements".
+**Bonus exercise**. If you are already finished, take a test at the TEI by Example project: https://teibyexample.org/exist/tests/. You might want to start with Test n° 1 "Common Structure and Elements".
 
 
 ## Reuse materials from
