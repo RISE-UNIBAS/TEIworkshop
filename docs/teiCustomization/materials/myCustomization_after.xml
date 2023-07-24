@@ -29,8 +29,7 @@
   <text>
     <body>
       <head>TEI Complete</head>
-      <p> Customiation of the TEI (P5) modules for the 2019 Lausanne workshop 'Textes et éditions
-        numériques'.</p>
+      <p> Customiation of the TEI (P5) modules for this workshop.</p>
       <p>However, this particular TEI customization is <emph>not recommended</emph> for actual use
         for encoding documents. It produces schemas and reference documentation that will be much
         larger, and include many more elements, than almost anyone could conceivably ever need.
