@@ -369,6 +369,15 @@ It is important to remember that every element is datable, as in the following e
 Additional metadata, such as information about the sources of the manuscript description, events in its custodial history (such as photography and conservation), digital or print surrogates for the manuscript, and secondary works concerning the manuscript. These may be provided in an `<additional>` element which contains (optional) `<adminInfo>`, `<surrogates>`, and `<listBibl>` elements.
 
 
+## Exercise
+
+**Manuscript descriptions**. Have a look at the resources from e-codices or the Bodleian Libraries, you should recognise the structure of the document. To know more, read the [Manuscript Description](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html) chapter of the TEI Guidelines.
+
+- [ecodices](https://www.e-codices.unifr.ch). Explore by yourself or go to this example: [website](https://www.e-codices.unifr.ch/en/list/one/ubb/AN-II-0003), click on 'Show standard description' and then 'Show XML' to see the TEI source.
+- [Medieval Manuscripts in Oxford Libraries](https://medieval.bodleian.ox.ac.uk/) and corresponding [Github repo](https://github.com/bodleian/medieval-mss). Check the About page > Technical details. Explore by yourself or go to this example: [website](https://medieval.bodleian.ox.ac.uk/catalog/manuscript_4345) and [TEI source](https://github.com/bodleian/medieval-mss/blob/master/collections/Digby/MS_Digby_223.xml).
+
+**TEI export in Zotero**. Check the Zotero documentation about exchange with the TEI: https://www.zotero.org/support/kb/tei. Create an entry in your Zotero library, export in TEI (check the options you have) and open the generated file in your XML editor. You should be able to recognise the structure of the document. To know more, read the [Bibliographic Citations and References](https://tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COBI) section in the TEI Guidelines.
+
 
 
 ## Reuse materials from
