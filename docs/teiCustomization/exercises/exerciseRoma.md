@@ -21,7 +21,7 @@ These instructions only cover part of Roma’s functionality. They describe the 
 
 - make an attribute mandatory, and
 
-- constraint its values.
+- constrain its values.
 
 These instructions do not cover some other capabilities of Roma, including adding elements; changing an element’s class membership, contents, or description; changing an attribute's permitted values (other than to a closed list of values); changing the language of Roma interface itself or of the elements & attributes generated.
 
@@ -32,127 +32,99 @@ In this exercise, we will start from an existing customization and we will edit 
 
 - The customization is in your Materials folder (download from the course homepage).
 
-- Now, let's go to Roma: when you are on-line, point your favorite web browser to <https://roma2.tei-c.org/>.
+- Now, let's go to Roma: when you are on-line, point your favorite web browser to <https://roma.tei-c.org/>.
 
-- You should get to the Roma start screen, which says something like 'Roma: generating customizations for the TEI'. 
+- You should get to the Roma - ODD Customization home page. 
 
-- As said, we will edit an existing ODD: check the 'Open existing customization' radio button and upload the file **myCustomization_before.xml**, that you can find in the materials folder.
+- As said, we will edit an existing ODD: go to the 'Upload ODD' tab and upload the file **myCustomization_before.odd**, that you can find in the Materials folder.
 
-- Click Submit!
+- Click Start!
 
 ## Metadata
-After clicking Submit, it should take you to the tab Customize in the Page *Set your parameters*. Here you can enter basic metadata of your customization:
+After clicking Start, it should take you to the Settings page. Here you can enter basic metadata of your customization:
 
-- For the **title** choose a meaningful (for you!) name, like 'My first TEI customization' or 'Lausanne Workshop Customization'
+- For the **title** choose a meaningful (for you!) name, like 'My first TEI customization' or 'TEI customization for X Workshop'.
 
-- For the **filename**, it’s a good idea to avoid characters that may confuse operating systems, like spaces, slashes, back-slashes, colons, etc. You can use something like 'myTEI' or 'lausanneTEI'
+- For the **identifier**, it’s a good idea to avoid characters that may confuse operating systems, like spaces, slashes, back-slashes, colons, etc. You can use something like 'myTEI' or 'TeiCustomizationWorkshop'. This will also be the filename of the ODD and of the schema.
 
-- Choose the **language** you prefer. Remember that this will only affect Roma and NOT the customization (inlcuding the documentation) that you are creating
+- We will not create new elements, so the **Customization Namespace** is not relevant and can be left as it is.
 
-- The **author** is you!
+- Leave the **prefix** as it is.
 
-- Adding a short **description** is a good practice, for you (in order to remember months later, and for others)
+- Choose the **languages** you prefer. 
 
-Press the Submit button (the name of your Customization appears on the top right corner).
+- The **author** is you.
+
+Press the Customize ODD button (the name of your customization appears on the top bar).
 
 ## Modules
 
-In this page (List of TEI modules) you can choose the modules which will be included in the schema. The full list of available TEI modules is listed on the left, and at the right there is a ‘List of selected modules’ which is the list currently selected for your schema.
-
-- For this exercise, remove the module Dictionaries (click on 'remove', not on 'dictionaries').
+We can remove entire modules (corresponding to chapters of the Guidelines) if we do not need them. In this exercise, remove the module Dictionaries:
+- start typing on the right 'dict'. An element should appear, which belong to the module Dictionaries. You can see that on the right.
+- Click on the X symbol next to the name of the module, (dictionaries). A window will pop up, saying something like "This will remove the entire module from your customization. Are you sure you want to continue?". Click Yes.
+- Notice that the symbol next to the Dictionaries module is now a +. We can click there if we need to add again that module.
 
 ## Elements 
 
 It is often the case that the modules chosen contain many more elements than are desired.
 We are starting from a large customization, so let's remove some elements that we know we will not use.
 
-- First click on a module name from the List of selected Modules (the right column). For this exercise, click on the module *namesdates*. This should take you to the appropriate *Change module* page.
+- Sort the list of elements by module. To do this, you should have selected the button Elements on the top left and and click the sorting button (with the up and down arrows) By module.
+- As in this exercise we are using a letter, the Namesdates module will certainly be useful. But not all elements of it. Scroll down until you arrive to the Namesdates module, the name of the modules appear on the right. You now should see the elements addName, affiliation, age, etc.
+- To remove the elements climate, offset and terrain (for example), uncheck the box to the left of their names.
 
-- Have a look at the elements listed and find one that you haven't used in previous exercise. For example, the element 'climate' or 'langKnowledge' or 'terrain'. Now you can Exclude it/them. 
-
-- Save your changes, using the red button at the bottom of the page.
+Done!
 
 ## Attributes
 
-On the same page, the *Change modules* page, there is a *Change attributes* link next to each element, on the right. Clicking on this link will bring you to a page for changing or adding attributes called *Added Attributes*.
-
 Imagine that we want to make sure that for each person the date of birth is specified (so that later you can put all the data on a beautiful timeline). In order to do this, we want the attribute '@when' to be mandatory on the element 'birth'.
 
-Also, as we are very confident about the information we have about the birth of persons, we don't need to specify how certain we are; we can therefore Excude the attribute '@cert' (that signifies the degree of certainty associated with the intervention or interpretation) :)
+Also, as we are very confident about the information we have about the birth of persons, we don't need to specify how certain we are; we can therefore Excude the attribute '@cert' (that signifies the degree of certainty associated with the intervention or interpretation)
 
-- First of all, find the element birth and click on the relative *Change attributes* link on the right.
+- Scroll up to the element birth and click on it, then on Attributes. A list of attributes is displayed, organised by their classes.
 
-- This brings you to the *Added attributes* page. A list of attributes is displayed. 
+- Find the attribute '@cert' (belonging to the class att.global.responsibility) and remove it with the X symbol.
 
-- Find the attribute '@cert' and select the radio button Exclude. Don't forget to Save (at the bottom of the page)! 
+- Then, find the attribute '@when' (belonging to the class att.datable.w3c) and click on the pencil symbol next to it for editing. Change the usage to Required.
 
-- Then, find the attribute '@when'. For changing it, we need to click on it. This brings you to the page *Add some attributes*.
-
-- As said, we want the attribute '@when' to be mandatory. How to do that? Change the values of *Is it optional* to No.
-
-- Save again!
+Done!
 
 
-## Saving your ODD files
+## Save your ODD file
 
-Clicking the *Save Customization* tab, downloads the ODD file that Roma has generated. The default name is the filename specified in the Customize page with .xml appended. Some people like to change the .xml to .odd. Either way, you should **always** save your ODD file, or you will have to go through all this work again anytime you want to modify your customization.
+From the Download menu on the top right, select Customization as ODD. The generated file can be saved with an extension .odd or .xml: it is still a XML document, but you might find convenient to use the extenstion .odd to distinguish it from the rest.
 
-## Generate the Documentation
+Remember to **always** save your ODD file, or you will have to go through all this work again anytime you want to modify your customization.
 
-To generate reference documentation in HTML, select the *Documentation* tab. Leave the output type at the default 'html', and click Submit. Once the file is stored on your compyter, you can open the it with your web browser.
+## Generate the documentation
+
+From the Download menu on the top right, select Documentation as ... and the format of your choice.
 
 ## Generate the schema
 To generate an output schema select the *Schema* tab. Here you can change the desired schema language of the schema that Roma will generate and download when you click Submit. For our purposes, leave the default, RELAX NG compact syntax. 
 
-## Test your Customization
+## Test your customization
 
-If you want to test your Customization, go to oXygen and associate the schema to a TEI document: 
+To test your customization, go to oXygen and associate the schema to a TEI document: 
 
-- in oXygen, open a TEI document (one of the document you have been working on)
+- in oXygen, open the TEI document vanGoghLetters_001_forExercise.xml, which is also in the Materials folder.
 
-- choose menu 'Document' > 'Schema' > 'Associate schema' and select the schema you just downloaded. Leave the rest as it is and press OK. 
+- choose menu 'Document' > 'Schema' > 'Associate schema'. Select the schema you just downloaded. Leave the rest as it is and press OK. 
 
 - The schema is now associated (you can see it at the top of your TEI document)
 
+- Try to validate the document: you should have two errors, because we change the behaviour of the element birth. They can be fixed by removing the attribute @cert and by adding the attribute @when.
+
 - Now try to use the element 'entry'. oXygen will prompt you an error 'Element "entry" not allowed anywhere'! Why? Because we deleted the module Dictionaries.
 
-- inside the element 'person' (not 'persName', but 'person' in the Header) create an element 'langKnowledge'. The same error will appear, because we excluded this element.
+You can keep playing with what you changed in the schema (try to use the element climate for example) and see what happens.
 
-- again inside the element 'person', have a look at the element 'birth'. The attribute '@when' is already there? If not, oXygen will prompt another error, because we made this attribute mandatory. 
+To check the differences between the schema before and after your customisation, you can now associate the schema myCustomization_before.rng, which is also available in the Materials folder. Everything should validate, even if you remove the attribute @when or use the element climate.
 
-Very good! You can keep playing with what you changed in the schema and see how it reflects your encoding.
-
-
----
 
 ## Still have time ... ?
 
-In this additional exercise we will constrain the list of values for an attribute. This means that when you use a certain attribute, you can only give the values that you specified in the schema.
-
-For this exercise, we want to prepare a schema for encoding poems, and in particular sonnets. For ensuring consistency, we want that each element 'lg' (line groups) has an attribute '@type' with value 'quatrain' or 'tercet', which are the type of stanzas a sonnet is made of.
-
-- You can keep working on the same schema. If you closed Roma, go back to it and upload the Customization
-
-- You can change the metadata and the name of the Customization
-
-- In the Tab *Modules*, click on the module 'Core'
-
-- Now find 'lg' and click on the button 'Change attributes' on the right
-
-- Now find the attribute '@type' and click on it
-
-- In the *Add some attributes* page, we can set the list of values to 'Closed list' (yes!)
-
-- In the field below, 'List of values', we can specify the values we want, separated by a comma. This should looks like 'quatrain, tercet'
-
-- You can add a description for the change attribute, like 'Specify the stanzas inside a sonnet'
-
-- Don't forget to save :)
-
-That's all! Now you can Save the Customization and generate the Schema, as you did in the previous exercise. 
-
-You can test your schema on the poem you have been working on!
-
+Try to constrain the list of values for an attribute.
 
 ---
 
@@ -163,11 +135,10 @@ This exercise reuses tutorials at
 - <http://www.tei-c.org/Guidelines/Customization/use_roma.xml> Licence: CC-BY
 
 
----
 
-**About this exercise**
+## About this exercise
 
-Publication: Formation *Textes et éditions numériques*. Lausanne, 25-26 avril 2019.
+Title: TEI customization with ROMA
 
 Author: Elena Spadini
 

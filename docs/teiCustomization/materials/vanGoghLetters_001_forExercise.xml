@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="myCustomization_after.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Exercise material taken from: To Theo van Gogh. The Hague, Sunday, 29
+                    September 1872.</title>
+                <editor>Leo Jansen</editor>
+                <editor>Hans Luijten</editor>
+                <editor>Nienke Bakker</editor>
+                <respStmt>
+                    <resp>Changes from the original XML file in the vangoghletters.org edition to
+                        exercise material (removal of original version, facsimile, notes, some
+                        metadata)</resp>
+                    <name>Elena Spadini</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Elena Spadini, as exercise material. See here below for the original
+                    publication statement.</authority>
+                <publisher><name>Huygens Instituut voor Nederlandse Geschiedenis
+                        (KNAW)</name><email>info@huygens.knaw.nl</email></publisher>
+                <publisher>Van Gogh Museum</publisher>
+                <pubPlace>Amsterdam</pubPlace>
+                <date type="first" when="2009">2009</date>
+                <availability status="restricted">
+                    <licence
+                        target="http://creativecommons.org/licenses/by-nc-sa/4.0/ https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">
+                        <p>Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+                        </p></licence>
+                </availability>
+                <ptr target="http://vangoghletters.org/orig/let001"/>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <idno>Amsterdam, Van Gogh Museum, inv. no. b1 V/1962</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="pers442">
+                        <persName>Carl Adolph Haanebeek</persName>
+                        <birth>1821</birth>
+                        <death when="1906">1906</death>
+                        <occupation>Wine merchant</occupation>
+                    </person>
+                    <person xml:id="pers642">
+                        <persName>Willem Marinus Roos</persName>
+                        <birth cert="high" when="1821">1816</birth>
+                        <death when="1893">1893</death>
+                        <occupation>Lodging-house keeper</occupation>
+                    </person>
+                </listPerson>
+            </particDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="translation">
+                <pb n="1r" xml:id="pb-trans-1r-1"/>
+                <dateline>The Hague, 29 September 1872.</dateline>
+                <opener>My dear Theo,</opener>
+                <p>Thanks for your letter, I was glad to hear that you got back safely. I missed you
+                    the first few days, and it was strange for me not to find you when I came home
+                    in the afternoon.</p>
+                <p>We spent some pleasant days together, and actually did go for some walks and see
+                    a thing or two whenever we had the chance.</p>
+                <p>What terrible weather, you must feel <hi rend="ital">anxious</hi> on your walks
+                    to Oisterwijk. Yesterday there were trotting races on the occasion of the
+                    exhibition, but the illumination and fireworks were postponed because of the bad
+                    weather, so it’s just as well you didn’t stay to see them. Regards from the
+                        <persName ref="#pers442">Haanebeeks</persName> and the <persName
+                        ref="#pers642">Rooses</persName>. Ever,</p>
+                <closer>Your loving</closer>
+                <signed>Vincent</signed>
+            </div>
+        </body>
+    </text>
+</TEI>

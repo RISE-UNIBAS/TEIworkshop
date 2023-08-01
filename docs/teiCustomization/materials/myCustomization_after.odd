@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
   xml:lang="en">
   <teiHeader>
@@ -22,9 +23,16 @@
         <note type="ns">http://www.example.org/ns/nonTEI</note>
       </notesStmt>
       <sourceDesc>
-        <p>TEI all</p>
+        <p>Written from scratch.</p>
       </sourceDesc>
     </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application ident="RomaJS" version="1.0.0" when="2023-07-31T13:32:24.536Z">
+          <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
+        </application>
+      </appInfo>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -36,26 +44,24 @@
         Tempting though it may be simply to have absolutely everything, and <q>just ignore</q>
         elements not required, experience has shown that their presence makes the documentation
         harder to read and use, and makes a schema that is far more lax than desired.</p>
-      <schemaSpec ident="myCustomization" start="TEI teiCorpus" prefix="">
+      <schemaSpec ident="myCustomization" start="TEI teiCorpus" prefix="tei_" targetLang="en"
+        docLang="en">
         <moduleRef key="tei"/>
-        <!-- required -->
         <moduleRef key="core"/>
-        <!-- required -->
         <moduleRef key="analysis"/>
         <moduleRef key="certainty"/>
         <moduleRef key="corpus"/>
+
         <moduleRef key="drama"/>
         <moduleRef key="header"/>
-        <!-- required -->
         <moduleRef key="linking"/>
         <moduleRef key="msdescription"/>
-        <moduleRef key="namesdates" except="climate langKnowledge terrain"/>
+        <moduleRef key="namesdates" except="climate offset terrain"/>
         <moduleRef key="textstructure"/>
-        <!-- required -->
         <moduleRef key="transcr"/>
         <moduleRef key="verse"/>
         <moduleRef key="tagdocs"/>
-        <elementSpec ident="birth" module="namesdates" mode="change">
+        <elementSpec ident="birth" mode="change">
           <attList>
             <attDef ident="cert" mode="delete"/>
             <attDef ident="when" mode="change" usage="req"/>

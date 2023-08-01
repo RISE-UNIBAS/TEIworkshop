@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
   xml:lang="en">
   <teiHeader>
@@ -36,23 +37,19 @@
         Tempting though it may be simply to have absolutely everything, and <q>just ignore</q>
         elements not required, experience has shown that their presence makes the documentation
         harder to read and use, and makes a schema that is far more lax than desired.</p>
-      <schemaSpec ident="myCustomization" start="TEI teiCorpus" prefix="">
+      <schemaSpec ident="myCustomization" start="TEI teiCorpus">
         <moduleRef key="tei"/>
-        <!-- required -->
         <moduleRef key="core"/>
-        <!-- required -->
         <moduleRef key="analysis"/>
         <moduleRef key="certainty"/>
         <moduleRef key="corpus"/>
         <moduleRef key="dictionaries"/>
         <moduleRef key="drama"/>
         <moduleRef key="header"/>
-        <!-- required -->
         <moduleRef key="linking"/>
         <moduleRef key="msdescription"/>
         <moduleRef key="namesdates"/>
         <moduleRef key="textstructure"/>
-        <!-- required -->
         <moduleRef key="transcr"/>
         <moduleRef key="verse"/>
         <moduleRef key="tagdocs"/>
