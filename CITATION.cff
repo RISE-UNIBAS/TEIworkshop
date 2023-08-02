@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: Workshop. TEI put into practice
+message: >-
+  If you use this course, please cite it using the metadata
+  from this file.
+type: course
+authors:
+  - given-names: Elena
+    family-names: Spadini
+    email: elena.spadini@unibas.ch
+    affiliation: University of Basel
+    orcid: 'https://orcid.org/0000-0002-4522-2833'
+url: 'https://github.com/RISE-UNIBAS/TEIworkshop'
+abstract: >-
+  One day TEI workshop, offered by Research and
+  Infrastructure Support (RISE) - University of Basel. It
+  covers the basics of XML and TEI, the encoding of logical
+  and semantic features, of citations and references, of
+  manuscripts and early prints description, as well as the
+  basics of XPath and of TEI customisation.
+keywords:
+  - Text Encoding Initiative
+  - text encoding
+license: CC-BY-SA-4.0
+version: 202307-DaSCH
+date-released: '2023-07-25'
