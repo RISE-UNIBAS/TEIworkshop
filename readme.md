@@ -48,11 +48,26 @@ using [XPath](https://dixit.uni-koeln.de/wp-content/uploads/2015/04/Camp2-4-Jame
 
 <br/><br/>
 
-## And to conclude ...
+## References
 
-> Computers can only deal with explicit data. The function of markup is to represent textual material into digital form through the explicating act of text-encoding. Descriptive markup reveals what the encoder thinks to be implicit or hidden aspects of a text, and is thus an interpretive medium which often documents scholarly research next to structural information about the text. In order for this research to be exchangeable, analyzable, re-usable, and preservable, texts in the field of the humanities should be encoded according to a standard which defines a common vocabulary, grammar, and syntax, whilst leaving the implementation of the standard up to the encoder. A result of communal efforts among computing humanists, the Text Encoding Initiative documents such a standard in the TEI Guidelines. These guidelines are fully adaptable and customisable to one’s specific project whilst enhancing this project’s compatibility with other projects employing the TEI. Since over two decades, the TEI has been used extensively in projects from different disciplines, fields, and subjects internationally. The ongoing engagements of a broad user community through the organization of the TEI Consortium consolidates the importance of the text encoding standard and informs its continuous development and maintenance.
+**Text Encoding Initiative**
+- Website of the Text Encoding Initiative consortium: https://tei-c.org/
+- TEI Guidelines: https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html
+- TEI mailing list: https://tei-c.org/support/#tei-l
+- Journal of the Text Encoding Initiative: https://journals.openedition.org/jtei/
+- Burnard, Lou. 2014. *What Is the Text Encoding Initiative? : How to Add Intelligent Markup to Digital Resources*. Marseille: OpenEdition Press. http://books.openedition.org/oep/426. In French: https://books.openedition.org/oep/1237.
+- Burghart, Marjorie and Elena Pierazzo. 2017. *Digital Scholarly Editions: Manuscripts, Texts and TEI Encoding*. dariahTeach. https://teach.dariah.eu/course/view.php?id=32
 
-From Melissa Terras, Edward Vanhoutte, and Ron Van den Branden. TEI by Example. https://teibyexample.org/tutorials/TBED00v00.htm#summary
+**ODD by example: generate an ODD from TEI files**
+- Wiki page: https://wiki.tei-c.org/index.php?title=Oddbyexample
+- TEI Council Technical Working Paper (temporary dev page): http://teic.github.io/TCW/howtoGenerate.html
+- Stylesheet: https://github.com/TEIC/Stylesheets/blob/release-7.55.0/tools/oddbyexample.xsl
+
+**Update TEI framework in oXygen**
+- When new releases of the TEI Guidelines and Stylesheets are available: https://github.com/TEIC/oxygen-tei/blob/master/oxygen-tei-plugin.md
+
+**XPath**
+- XPATH specifications: https://www.w3.org/2005/xpath-functions 
 
 <br/><br/>
 
