@@ -10,6 +10,16 @@ authors:
     email: elena.spadini@unibas.ch
     affiliation: University of Basel
     orcid: 'https://orcid.org/0000-0002-4522-2833'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.8180331
+    description: All versions
+  - type: doi
+    value: 10.5281/zenodo.8207929
+    description: Version 202307-DaSCH
+  - type: doi
+    value: 0.5281/zenodo.8180332
+    description: Version v1.0
 url: 'https://github.com/RISE-UNIBAS/TEIworkshop'
 abstract: >-
   One day TEI workshop, offered by Research and
@@ -22,5 +32,5 @@ keywords:
   - Text Encoding Initiative
   - text encoding
 license: CC-BY-SA-4.0
-version: 202307-DaSCH
-date-released: '2023-07-25'
+version: v1.0
+date-released: '2023-07-24'

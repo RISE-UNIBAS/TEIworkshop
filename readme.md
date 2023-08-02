@@ -1,3 +1,6 @@
+Various reselases available on Zenodo: [https://zenodo.org/badge/DOI/10.5281/zenodo.8180331.svg](https://doi.org/10.5281/zenodo.8180331)
+
+
 # Workshop. TEI put into practice
 
 University of Basel, Research and Infrastructure Support (RISE)
