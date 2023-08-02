@@ -68,6 +68,9 @@ using [XPath](https://dixit.uni-koeln.de/wp-content/uploads/2015/04/Camp2-4-Jame
 
 **XPath**
 - XPATH specifications: https://www.w3.org/2005/xpath-functions 
+- XPath cheatsheet: https://devhints.io/xpath
+- W3schools tutorial: https://www.w3schools.com/xml/xpath_intro.asp
+- MDN doc: https://developer.mozilla.org/en-US/docs/Web/XPath
 
 <br/><br/>
 
