@@ -1,4 +1,4 @@
-Various reselases available here and archived on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8180331.svg)](https://doi.org/10.5281/zenodo.8180331)
+Various reselases available here and archived in Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8180331.svg)](https://doi.org/10.5281/zenodo.8180331)
 
 
 # Workshop. TEI put into practice
